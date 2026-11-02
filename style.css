@@ -1,0 +1,48 @@
+:root {
+	color-scheme: light;
+	--color-bg: #f5f7fa;
+	--color-text: #243047;
+	--color-accent: #5b7cfa;
+	--space: 1rem;
+	font-family: system-ui, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	min-height: 100vh;
+	color: var(--color-text);
+	background: var(--color-bg);
+	line-height: 1.6;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+.container {
+	width: min(100% - 2 * var(--space), 72rem);
+	margin-inline: auto;
+}
+
+.button {
+	display: inline-block;
+	padding: 0.65rem 1rem;
+	border: 0;
+	border-radius: 0.5rem;
+	color: #fff;
+	background: var(--color-accent);
+	cursor: pointer;
+}
+
+@media (min-width: 48rem) {
+	:root {
+		--space: 1.5rem;
+	}
+}
